@@ -82,7 +82,7 @@ class BlackJackGame {
     let sum = 0;
     for (const card of this.playerCards) {
       cards += card.name;
-      cards += ', ';
+      cards += ' ';
     }
 
     document.getElementById('playerCards').innerHTML = 'Cards: ' + cards;
@@ -137,17 +137,15 @@ class BlackJackGame {
   }
 
   dealDealer() {
-    document.getElementById('dealerCards').removeAttribute('hidden');
-    document.getElementById('dealerTotal').removeAttribute('hidden');
     let cards = '';
 
-    // initial deal to get a more interesting effect from the pause.
+    document.getElementById('dealerCards').removeAttribute('hidden');
+    document.getElementById('dealerTotal').removeAttribute('hidden');
     document.getElementById('dealerCards').innerHTML = 'Dealer: ' + cards;
     document.getElementById('dealerTotal').innerHTML = 'Total: ' + this.dealerTotal;
 
     while (this.dealerTotal <= this.playerTotal && this.dealerTotal < 21) {
       cards = '';
-      setTimeout(1000); // dramatic pause
       this.addDealerCard();
 
       if (this.dealerTotal > 21) {
@@ -165,7 +163,7 @@ class BlackJackGame {
 
       for (const card of this.dealerCards) {
         cards += card.name;
-        cards += ', ';
+        cards += ' ';
       }
 
       document.getElementById('dealerCards').innerHTML = 'Dealer: ' + cards;
