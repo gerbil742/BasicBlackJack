@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>BlackJack</h1>
+  <p id="comment">Want to Play a round?</p>
+  <p id="playerCards">Cards: </p>
+  <p id="playerTotal">Sum: </p>
+  <br>
+
+  <p hidden id="dealerCards">Dealer: </p>
+  <p hidden id="dealerTotal">Sum: </p>
+
+  <button id="dealButton" onclick="game.startGame()">Start</button> 
+  <button id="stayButton" onclick="game.dealDealer()" hidden>Stay...</button>
+</body>
+
+<script src="index.js"></script>

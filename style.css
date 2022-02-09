@@ -1,0 +1,26 @@
+h1 {
+  color: gold;
+}
+
+p {
+}
+
+button {
+  background-color: gold;
+  padding: 1em 2em;
+}
+
+body {
+  background-image: url('dAIZPHY.jpeg');
+  background-size: contain;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  text-align: center;
+}
+
+#dealerSum {
+}
+
+#dealerCards {
+}
